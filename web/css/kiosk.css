@@ -1,0 +1,566 @@
+html,
+body {
+    height: 100%;
+    background-color: #f8f0ed;;
+}
+
+.header {
+    height: 11vh;
+    border-bottom: 0.2vh #1bb442 solid;
+    position: relative;
+}
+
+.container {
+    width: 83.3vw;
+}
+
+.date-time {
+    padding-top: 1.4vh;
+    color: #00a163;
+}
+
+.date-time #date {
+    font-size: 1.1vw;
+    white-space: nowrap;
+}
+
+.date-time #time {
+    font-size: 2.5vw;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.content {
+    height: 80vh;
+    position: relative;
+}
+
+/*Названия поликлиник/учреждений/отделений*/
+#windowName {
+    text-align: center;
+    margin-block-start: 0px;
+    /*padding-top: 1vh;*/
+    padding-bottom: 1vh;
+    font-size: 3.25vh;
+    font-weight: 700;
+    color: #00a163;
+    margin-bottom: 0px;
+}
+
+/*Названия окон для более удобной навигации*/
+#officeName {
+    text-align: center;
+    margin-block-start: 0px;
+    padding-top: 3vh;
+    /*padding-bottom: 1vh;*/
+    font-size: 4.2vh;
+    font-weight: 700;
+    color: #00a163;
+    margin-bottom: 0px;
+}
+
+.footer {
+    height: 9vh;
+/*    background-color: #f5f5f5; */
+/*    border-top: 1px solid #ddd;*/
+/*    padding-top: 10px;*/
+    /*position: relative;*/
+}
+
+.footer .title {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #00a163;
+}
+
+.swiper-slide {
+    overflow: hidden;
+}
+
+.confirm-info {
+    padding-top: 3vh;
+}
+
+hr.primary {
+    max-width: 10vw;
+    border-width: 3px;
+    border-color: #1bb442;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+div.ajaxwait {
+    position: fixed;
+    z-index: 600;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70)
+}
+
+div.ajaxwait_image {
+    position: fixed;
+    z-index: 601;
+    width: 100%;
+    height: 100%
+}
+
+div.ajaxwait_image img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 20vh;
+    max-width: 20vh;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    z-index: 600;
+    opacity: 0.6;
+}
+
+.messageAfterPrintTalon {
+    text-align: center;
+    color: black;
+    padding-top: 1vh;
+    font-size: 3.5vh;
+}
+
+.site-index {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+}
+
+/*.info {*/
+    /*text-align: center;*/
+    /*font-size: 1.5em;*/
+/*}*/
+
+.auth-info {
+    /*padding-top: 50px;*/
+    /*line-height: 2;*/
+    font-size: 1.5em;
+    /*height: 100%;*/
+}
+
+.btn-kiosk {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    padding: 24px 0;
+    background-color: rgb(25,85,113);
+}
+
+.btn-kiosk.focus,
+.btn-kiosk:focus,
+.btn-kiosk.active,
+.btn-kiosk:active,
+.btn-kiosk:hover,
+.btn-kiosk-sm.focus,
+.btn-kiosk-sm:focus,
+.btn-kiosk-sm.active,
+.btn-kiosk-sm:active,
+.btn-kiosk-sm:hover {
+    background-color: #00a163 !important;
+    border-color: #00a163 !important;
+}
+
+.btn-kiosk-sm {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    background-color: rgb(25,85,113);
+    border-color: rgb(25,85,113);
+}
+
+/*.btn-kiosk-sm.focus, .btn-kiosk-sm:focus, .btn-kiosk-sm.active, .btn-kiosk-sm:active, .btn-kiosk-sm:hover {*/
+    /*background-color: #7b7b7b !important;*/
+/*}*/
+
+.step {
+    display: inline-block;
+    width: 61.5vw;
+
+}
+
+.step .container-fluid h3 {
+    text-align: center;
+    font-size: 4vh;
+    color: #00a163;
+    padding-top: 4vh;
+}
+
+.step > .container-fluid > .title {
+    text-align: center;
+    font-size: 3.5vh;
+    color: #00a163;
+}
+
+.step .container-fluid .primary {
+    display: block;
+    margin-bottom: 4vh;
+}
+
+.step-center {
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.step > .title {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.rnumb-title {
+    font-size: 3vh;
+    font-weight: 700;
+    margin: 3vh 0 2vh 0;
+    padding: 1vh;
+    border: 1.3px solid #c5c5c5;
+    border-radius: 5px;
+    width: 59.2vw;
+}
+
+.btn-rnumb {
+    color: #fff;
+    background-color: rgb(25,85,113);
+    border-color: rgb(25,85,113);
+    margin: 0.17vw;
+    padding: 1.65vh 0.9vh 1.65vh 0.9vh;
+    border-radius: 1vh;
+    width: 9.42vw;
+    font-size: 2.6vh;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center;
+    color: #00a163;
+}
+
+.infoText {
+    opacity: 0;
+    transition: opacity 0.8s
+}
+
+.auth-container {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.auth-form {
+    /*height: auto;*/
+    /*width: auto;*/
+}
+
+.auth-form form {
+    /*margin-top: -20px;*/
+
+}
+
+.auth-form form .form-control {
+    font-size: 3.4em;
+    height: 6vh;
+    width: 47vw;
+}
+
+.auth-form form .form-group > label {
+    font-size: 3.1vh;
+    height: 55px;
+    line-height: 48px;
+}
+
+.auth-form form .form-group.active > label {
+    border-right: 10px solid #ddd;
+}
+
+.auth-scanner {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -57%);
+    width: 100%;
+}
+
+.auth-scanner > .auth_scanner__title {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.auth-scanner > .auth_scanner__status {
+    font-size: 3em;
+    text-align: center;
+    color: #777777;
+}
+
+.keyboard-container {
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    bottom: 0;
+}
+
+.keyboard-container.num-keyboard {
+    bottom: 70px;
+}
+
+.keyboard-container > #keyboard {
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 calc(-1238px / 2);
+}
+
+.keyboard-container > #keyboard.num-keyboard {
+    left: 50%;
+    margin: 0 0 0 calc(-765px / 2);
+}
+
+#modal-user button.close, #modal-confirm button.close {
+    font-size: 1.5em;
+}
+
+#modal-user .modal-content > .modal-header, #modal-confirm .modal-content > .modal-header {
+    font-size: 3em;
+    padding-left: 50px;
+}
+
+#modal-user .modal-content > .modal-body, #modal-confirm .modal-content > .modal-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2.5em;
+    color: #d9534f;
+}
+
+#modal-confirm .modal-content > .modal-body {
+    color: #0f0f0f;
+}
+
+#modal-user .modal-footer > .btn, #modal-confirm .modal-footer > .btn {
+    font-size: 2.3em;
+}
+
+.modal {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.btn-pagination {
+    display: block;
+    width: 7.3vw;
+    height: 26.7vh;
+}
+
+.btn-navigation {
+    display: block;
+    width: 8.8vw;
+    height: 22.2vh;
+}
+
+.btn-pagination > i,
+.btn-navigation > i {
+    font-size: 6vh;
+    color: #7b7b7b;
+}
+
+.pagination-container {
+    padding: 0px;
+}
+
+.button-prev {
+    margin-bottom: 20px;
+}
+
+.btn-pagination.swiper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.bottom-control {
+    font-size: 2em;
+    padding: 20px 5px;
+    text-align: center;
+    display: block;
+    background-color: #7b7b7b;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.bottom-control:active,
+.bottom-control:hover {
+    background-color: #00a163;
+}
+
+.confirm-step {
+    font-size: 2.75em;
+}
+
+.confirm-step h3 {
+    padding-top: 6vh;
+    font-size: 5vh;
+}
+
+.confirm-step .btn-kiosk-sm {
+    font-size: 4.3vh;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+/*.table-rnumb thead {*/
+    /*vertical-align: middle !important;*/
+    /*text-align: center;*/
+/*}*/
+
+.table-rnumb th {
+    font-size: 2.7vh;
+    vertical-align: middle !important;
+    text-align: center;
+}
+
+.table-rnumb td {
+    font-size: 2.7vh;
+    vertical-align: middle !important;
+    text-align: center;
+}
+
+.table-rnumb button {
+    font-size: 1.5em;
+}
+
+.fullcalendar-widget {
+    width: 96vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fullcalendar {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.fc .fc-row .fc-content-skeleton table, .fc .fc-row .fc-content-skeleton td, .fc .fc-row .fc-helper-skeleton td {
+    font-size: 1.5em;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+    font-size: 1.5em;
+}
+
+.fullcalendar-widget .fc-center {
+    text-transform: uppercase;
+}
+
+.fullcalendar-widget button {
+    width: 6vw;
+    height: 3.6vh;
+    font-size: 2.1vh;
+}
+
+.fc-day-grid-event > .fc-content > .fc-time {
+    display: none;
+}
+
+.fc-day-grid-event > .fc-content > .fc-title {
+    display: block;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.btn-rnumb:active, .btn-rnumb:focus, .btn-rnumb:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #00a163;
+    border-color: #00a163;
+}
+
+.dates-container {
+    height: 500px;
+    overflow: hidden;
+    text-align: left;
+}
+
+#patientChoice {
+    /*text-align: center;*/
+    /*margin-block-start: 0px;*/
+    /*padding-top: 0.5vh;*/
+    /*padding-bottom: 0.5vh;*/
+    margin: 0px;
+    font-size: 3vh;
+    font-weight: 500;
+    color: #00a163;
+}
+
+#inline.ui-widgett {
+    position: relative;
+    font-size: 3.4vh;
+    margin: 3vh 1vw 0 3vw;
+    float: left;
+}
+
+.ui-icon {
+    transform: translate(-38%, -30%);
+    width: 6vh;
+    height: 6vh;
+}
+
+.cancel-list-main {
+    font-size: 3vh;
+    height: 8.5vh;
+    border-radius: 0.5vh;
+    background-color: rgb(25,85,113);
+    border: 0.3vh solid #f8f0ed;
+    padding-top: 1.5vh;
+    color: #fff;
+}
+
+.cancel-list {
+    font-size: 3vh;
+    height: 9.5vh;
+    border-radius: 0.5vh;
+    background-color: rgb(224, 224, 215);
+    border: 0.3vh solid #f8f0ed;
+    padding-top: 1.5vh;
+}
+
+.cancel-btn {
+    font-size: 3vh;
+    height: 9.5vh;
+    border-radius: 0.5vh;
+    background-color: rgba(217, 83, 79, 0.95);
+    border: 0.3vh solid #f8f0ed;
+    padding-top: 1.5vh;
+    color: #fff;
+    z-index: 10;
+}
+
+.error-404-img {
+    height: 60vh;
+    width: 80vh;
+}
